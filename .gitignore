@@ -16,6 +16,7 @@
 # Un-ignore specific configuration folders entirely
 !.config/nvim/
 !.config/fish/
+!.config/ghostty/config
 
 # 5. EXPLICIT RE-IGNORE (Secrets)
 # Because step 4 whitelisted the entire 'fish' folder, we must 
