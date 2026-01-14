@@ -1,4 +1,9 @@
 -- Bootstrap lazy.nvim
+
+-- Note: As of Jan 2026, need to set 'git config --global init.defaultRefFormat files'
+-- if git experimental features are enabled.
+--
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   local lazyrepo = "https://github.com/folke/lazy.nvim.git"
