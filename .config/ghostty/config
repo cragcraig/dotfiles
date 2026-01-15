@@ -48,9 +48,11 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 
+background = 181818
 font-family = "RecMonoLinear Nerd Font"
+# font-family = "Rec Mono Linear"
 font-size = 12
-font-feature = -calt, -liga, -dlig
+# font-feature = -calt, -liga, -dlig
 theme = "0x96f"
 
 window-height = 60
@@ -65,3 +67,13 @@ macos-titlebar-style = tabs
 macos-option-as-alt = true
 macos-window-buttons = hidden
 
+## Keybindings
+
+# ctrl+c copies if text is currently selected, otherwise behaves normally
+keybind = performable:ctrl+c=copy_to_clipboard
+
+# Keybindings for moving between splits with Meta (super/cmd) + vim keys
+keybind = super+h=goto_split:left
+keybind = super+j=goto_split:bottom
+keybind = super+k=goto_split:top
+keybind = super+l=goto_split:right
