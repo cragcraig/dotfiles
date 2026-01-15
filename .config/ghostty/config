@@ -48,11 +48,13 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 
-background = 181818
+# background = 181818
+
+# Mac: brew install --cask font-recursive-mono-nerd-font
 font-family = "RecMonoLinear Nerd Font"
 # font-family = "Rec Mono Linear"
 font-size = 12
-# font-feature = -calt, -liga, -dlig
+font-feature = -calt, -liga, -dlig
 theme = "0x96f"
 
 window-height = 60
