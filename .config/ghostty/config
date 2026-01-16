@@ -71,6 +71,10 @@ macos-titlebar-style = tabs
 macos-option-as-alt = true
 macos-window-buttons = hidden
 
+# Enable workaround when SSH-ing to machines with Ghostty terminfo config
+# See https://ghostty.org/docs/help/terminfo#ssh
+shell-integration-features = ssh-terminfo,ssh-env
+
 ## Keybindings
 
 # ctrl+c copies if text is currently selected, otherwise behaves normally
