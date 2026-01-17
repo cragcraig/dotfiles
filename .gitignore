@@ -1,5 +1,5 @@
 # 1. DENY EVERYTHING
-*
+# *
 
 # 2. ALLOW DIRECTORY TRAVERSAL
 # We must allow git to "look inside" directories, otherwise it can't 
