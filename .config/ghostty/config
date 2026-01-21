@@ -1,14 +1,5 @@
 # This is the configuration file for Ghostty.
 #
-# This template file has been automatically created at the following
-# path since Ghostty couldn't find any existing config files on your system:
-#
-#   /home/crg/.config/ghostty/config
-#
-# The template does not set any default options, since Ghostty ships
-# with sensible defaults for all options. Users should only need to set
-# options that they want to change from the default.
-#
 # Run `ghostty +show-config --default --docs` to view a list of
 # all available config options and their default values.
 #
@@ -21,35 +12,6 @@
 # reloaded while running; some only apply to new windows and others may require
 # a full restart to take effect.
 
-# Config syntax crash course
-# ==========================
-# # The config file consists of simple key-value pairs,
-# # separated by equals signs.
-# font-family = Iosevka
-# window-padding-x = 2
-#
-# # Spacing around the equals sign does not matter.
-# # All of these are identical:
-# key=value
-# key= value
-# key =value
-# key = value
-#
-# # Any line beginning with a # is a comment. It's not possible to put
-# # a comment after a config option, since it would be interpreted as a
-# # part of the value. For example, this will have a value of "#123abc":
-# background = #123abc
-#
-# # Empty values are used to reset config keys to default.
-# key =
-#
-# # Some config options have unique syntaxes for their value,
-# # which is explained in the docs for that config option.
-# # Just for example:
-# resize-overlay-duration = 4s 200ms
-
-# background = 181818
-
 # Font: RecMonoLinear from RecMono Nerd Font family
 # Install from https://www.nerdfonts.com/font-downloads
 # although there seems to be a bug with the name of the Regular style font
@@ -59,23 +21,29 @@ font-size = 12
 font-feature = -calt, -liga, -dlig
 theme = "0x96f"
 
+# Initial terminal size
 window-height = 60
 window-width = 90
 
 window-decoration = auto
+
+# Linux window manager
 gtk-titlebar = true
 gtk-titlebar-style = tabs
 gtk-wide-tabs = false
 
+# MacOS window manager
 macos-titlebar-style = tabs
 macos-option-as-alt = true
 macos-window-buttons = hidden
+
+focus-follows-mouse = true
 
 # Enable workaround when SSH-ing to machines with Ghostty terminfo config
 # See https://ghostty.org/docs/help/terminfo#ssh
 shell-integration-features = ssh-terminfo,ssh-env
 
-## Keybindings
+### Keybindings ###
 
 # ctrl+c copies if text is currently selected, otherwise behaves normally
 keybind = performable:ctrl+c=copy_to_clipboard
