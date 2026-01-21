@@ -61,5 +61,7 @@ keybind = super+shift+k=resize_split:up,50
 keybind = super+shift+l=resize_split:right,50
 keybind = super+shift+z=equalize_splits
 
+# Super+Shift+io to switch tabs or +t for new tab
 keybind = super+shift+i=previous_tab
 keybind = super+shift+o=next_tab
+keybind = super+shift+t=new_tab
