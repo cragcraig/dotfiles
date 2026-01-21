@@ -1,5 +1,5 @@
 # 1. DENY EVERYTHING
-# *
+*
 
 # 2. ALLOW DIRECTORY TRAVERSAL
 # We must allow git to "look inside" directories, otherwise it can't 
@@ -14,12 +14,10 @@
 
 # 4. FOLDER WHITELIST
 # Un-ignore specific configuration folders entirely
-!.config/nvim/
-!.config/fish/
-!.config/ghostty/config
+!.config/nvim/*
+!.config/fish/*
+!.config/ghostty/*
 
-# 5. EXPLICIT RE-IGNORE (Secrets)
-# Because step 4 whitelisted the entire 'fish' folder, we must 
-# explicitly re-ignore the secrets file inside it.
-.config/fish/secrets.fish
+# Ignore secrets and similar files
+secrets.*
 .config/nvim/lazy-lock.json

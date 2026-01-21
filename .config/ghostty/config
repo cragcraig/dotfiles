@@ -48,8 +48,18 @@ shell-integration-features = ssh-terminfo,ssh-env
 # ctrl+c copies if text is currently selected, otherwise behaves normally
 keybind = performable:ctrl+c=copy_to_clipboard
 
-# Keybindings for moving between splits with Meta (super/cmd) + vim keys
+# Keybindings for moving between splits with Super+hjkl
 keybind = super+h=goto_split:left
 keybind = super+j=goto_split:bottom
 keybind = super+k=goto_split:top
 keybind = super+l=goto_split:right
+
+# Super+Shift+hjkl to resize split or Super+Shift+z to equalize
+keybind = super+shift+h=resize_split:left,50
+keybind = super+shift+j=resize_split:down,50
+keybind = super+shift+k=resize_split:up,50
+keybind = super+shift+l=resize_split:right,50
+keybind = super+shift+z=equalize_splits
+
+keybind = super+shift+i=previous_tab
+keybind = super+shift+o=next_tab
