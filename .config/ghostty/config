@@ -15,8 +15,8 @@
 # Font: RecMonoLinear from RecMono Nerd Font family
 # Install from https://www.nerdfonts.com/font-downloads
 # although there seems to be a bug with the name of the Regular style font
-font-family = "RecMonoLinear Nerd Font"
-# font-family = "Rec Mono Linear"
+# font-family = "RecMonoLinear Nerd Font"
+font-family = "Rec Mono Linear"
 font-size = 12
 font-feature = -calt, -liga, -dlig
 theme = "0x96f"

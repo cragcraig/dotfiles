@@ -4,6 +4,11 @@ set -x EDITOR nvim
 fish_add_path ~/bin
 fish_add_path ~/.local/bin
 
+# MacOS only
+if test -f /opt/homebrew/bin/
+    fish_add_path /opt/homebrew/bin/
+end
+
 alias vi nvim
 alias config '/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
