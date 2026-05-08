@@ -1,5 +1,4 @@
 set fish_greeting
-set -x EDITOR nvim
 
 fish_add_path ~/bin
 fish_add_path ~/.local/bin
@@ -9,7 +8,15 @@ if test -f /opt/homebrew/bin/
     fish_add_path /opt/homebrew/bin/
 end
 
-alias vi nvim
+# Alias vi to nvim if it exists
+if type -q nvim
+    alias vi nvim
+    set -x EDITOR nvim
+else
+    echo "WARNING: nvim is not available, falling back to vim"
+    set -x EDITOR vi
+end
+
 alias config '/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # Include secrets file (contains API keys, etc. that shouldn't be recorded in source control)
