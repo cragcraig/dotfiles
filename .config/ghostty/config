@@ -25,7 +25,18 @@ theme = "0x96f"
 window-height = 60
 window-width = 90
 
+# Window options
 window-decoration = auto
+focus-follows-mouse = true
+
+# Fix faded colors on MacOS
+window-colorspace = "display-p3"
+
+# Set the opacity level for unfocused panes (0.0 is completely transparent/faded, 1.0 turns off fading)
+unfocused-split-opacity = 1.0
+
+# Change the tint/fill color applied to the faded unfocused splits
+unfocused-split-fill = "#191724"
 
 # Linux window manager
 gtk-titlebar = true
@@ -36,8 +47,6 @@ gtk-wide-tabs = false
 macos-titlebar-style = tabs
 macos-option-as-alt = true
 macos-window-buttons = hidden
-
-focus-follows-mouse = true
 
 # Enable workaround when SSH-ing to machines with Ghostty terminfo config
 # See https://ghostty.org/docs/help/terminfo#ssh
