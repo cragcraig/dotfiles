@@ -40,3 +40,15 @@ if status is-interactive
     # rclone Google Drive
     abbr -a gdrive rclone mount gdrive: ~/gdrive
 end
+
+function fish_user_key_bindings
+    # 1. Initialize Vi bindings first
+    set -g fish_key_bindings fish_vi_key_bindings
+
+    # 2. Re-apply Ctrl+R binding to history page
+    bind -M insert \cr history-pager
+
+    # 3. Set Up/Down arrow history prefix searching
+    bind -M insert \e\[A history-prefix-search-backward
+    bind -M insert \e\[B history-prefix-search-forward
+end
