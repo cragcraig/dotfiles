@@ -21,3 +21,6 @@ This is CRITICAL. Without this, `config status` would show
 every single file in your home directory as untracked.
 `config config --local status.showUntrackedFiles no`
 
+3. [OPTIONAL] To set up pushing:
+
+`config push --set-upstream origin main`
