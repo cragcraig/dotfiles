@@ -1,3 +1,5 @@
+vim.env.GIT_DEFAULT_REF_FORMAT = "files"
+
 -- Lazy package manager (https://github.com/folke/lazy.nvim)
 require("config.lazy")
 
